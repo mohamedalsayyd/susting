@@ -1,0 +1,52 @@
+.swap .swap-con {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.swap-con .swaper{
+    min-width : 500px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--bg-color-dark);
+}
+.swaper .bnb-head .logo svg {
+    font-size: 21px;;
+}
+.swaper .swaper-body .bnb-input input {
+    height: 138px;
+    text-align: right;
+    font-size: 1.5rem;
+    background-color: #6b758382;
+    border: 1px solid #6b758382;
+    color: #FFF;
+
+}
+.swaper .swaper-body .bnb-input input:focus {
+    border:0;
+    box-shadow: none;
+}
+.swaper .swaper-body .bnb-input input::placeholder {
+    font-size: 1.5rem;
+    text-align: right;
+    color: #EEE;
+}
+.swaper .swaper-body .se-input input {
+    height: 138px;
+    text-align: right;
+    font-size: 1.5rem;
+    background-color: #6b758382;
+    border: 1px solid #6b758382;
+    color: #FFF;
+
+}
+.swaper .swaper-body .se-input input:focus {
+    border:0;
+    box-shadow: none;
+}
+.swaper .swaper-body .se-input input::placeholder {
+    font-size: 1.5rem;
+    text-align: right;
+    color: #EEE;
+}

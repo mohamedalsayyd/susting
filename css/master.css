@@ -1,0 +1,423 @@
+/* Start Root*/
+:root {
+    --main-color: #2dd7a2;
+    --dark-color: #121a24;
+    --bg-color-dark: #404852;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--dark-color);
+    color: #FFF;
+}
+.btn-success {
+    background: rgba( 0, 255, 0, 0.15 ) !important;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+}
+.btn-success:hover {
+    background: rgba( 0, 255, 0, 0.45 ) !important;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+}
+.text-main {
+    color: var(--main-color) !important;
+}
+/* End Root*/
+/* Start Landing*/
+.landing {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/phone.png');
+    background-size: cover;
+}
+.landing.auto {
+    height: auto;
+}
+/* Start Summary*/
+.summary {
+    height: calc(100% - 78px);
+}
+.summary .row {
+    align-items: center;
+}
+.summary .row.open {
+    align-items: start;
+}
+.summary .sum h2 {
+    font-weight: 800;
+    font-size: 45px;
+    color: #EEE;
+    text-transform: uppercase;
+}
+.summary .sum h2 span {
+    color: var(--main-color);
+}
+.summary .sum p {
+    color: #fff;
+    font-weight: 400;
+}
+/* End Summary*/
+/* Start Navbar*/
+/* Start Edit Bootstrap */
+.navbar-brand {
+    background-color: #fff;
+    border-radius: 10px;
+}
+#img-logo {
+    height: 40px
+}
+.nav-item a {
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+.nav-item a:hover,
+.nav-item a:focus{
+    color: #EEE;
+}
+.nav-item button {
+    background-color: var(--main-color);
+    padding: 10px 15px;
+}
+@media(min-width: 992px) {
+    .navbar-all {
+        align-items: center;
+    }
+    .nav-item {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+}
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+.navbar-toggler svg {
+    color: var(--main-color)
+}
+/* End Edit Bootstrap*/
+/*End Navbar*/
+/* End Landing*/
+/* Start Review*/
+.review {
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.review .all {
+    border-radius: 20px;
+    background-color: var(--bg-color-dark);
+    padding: 30px;
+}
+.review .item {
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.review .item span{
+    display: block;
+
+}
+.review .item .number {
+    font-weight: 500;
+    font-size: 30px;
+    color: #FFF;
+}
+.review .item .name {
+    font-size: 20px;
+    color: #FFF;
+    text-transform: uppercase;
+}
+.review .item .icon img{
+    width: 55px
+}
+/* End Review*/
+/* Start About Us*/
+.about {
+    margin-bottom: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.about h2 {
+    margin-bottom: 30px;
+}
+.about .heading {
+    color: #Fff;
+    border-bottom: 1px solid #FFF;
+}
+.about .box {
+    background-color: var(--bg-color-dark);
+    padding: 30px;
+    border-radius: 10px;
+    color: #fff;
+}
+/* End About Us*/
+/* Start Working Proccess*/
+.work {
+    margin-bottom: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.work .heading {
+    color: #Fff;
+    border-bottom: 1px solid #FFF;
+}
+.work .lg .row .col-lg-3 {
+    position: relative;
+}
+.work  .lg .row .col-lg-3 .item.top {
+    position: absolute;
+    top: -170px
+}
+.work .lg .item .heading {
+    text-transform: uppercase;
+}
+.work .lg .item .heading.one {
+    color: #3598C4;
+    border-bottom: 1px solid #3598C4;
+}
+.work .lg .item .heading.two {
+    color: #3e35c5;
+    border-bottom: 1px solid #3e35c5;
+}
+.work .lg .item .heading.three {
+    color: #6723b8;
+    border-bottom: 1px solid #6723b8;
+}
+.work .lg .item .heading.four {
+    color: #c5357c;
+    border-bottom: 1px solid #c5357c;
+}
+.work .content img {
+    width: 100%;
+    margin-top: 25px;
+}
+.work .box {
+    padding: 20px;
+    background-color: var(--bg-color-dark);
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.work .box .heading {
+    color: var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+}
+.work .box .icon svg{
+    padding: 5px;
+    border: 1px solid #EEE;
+    margin-bottom: 10px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.work .box p {
+    font-size: 1.5rem;
+}
+
+/* End Working Proccess*/
+/* Start Company Statics */
+.company {
+    margin-bottom: 100px;
+    padding-top: 30px;
+
+    background: rgba(118, 133, 160, 0.09);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.7px);
+    -webkit-backdrop-filter: blur(4.7px);
+}
+.company .heading {
+    color: #Fff;
+    border-bottom: 1px solid #FFF;
+}
+.company .imgs {
+    width: 100%;
+}
+.company .imgs img{
+    width: 300px;
+}
+.company .box {
+    padding: 30px;
+    border-radius: 10px;
+    background: var(--bg-color-dark);
+}
+.company .box .prog-group {
+    margin-bottom: 10px;
+}
+.company .progress-bar {
+    transition: ease 0.5s;
+}
+.company .user span{
+    display: block;
+}
+.company .user span.works {
+    color: var(--main-color);
+}
+/* Start Bootstrap Edit*/
+.progress-bar {
+    background-color: var(--main-color);
+}
+/* End Bootstrap Edit*/
+/* End Company Statics */
+/* Start Contact Us */
+.contact {
+    margin-bottom: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.contact .heading {
+    color: #Fff;
+    border-bottom: 1px solid #FFF;
+}
+.contact .box {
+    padding: 30px;
+    background-color: var(--bg-color-dark);
+    border-radius: 12px;
+}
+.contact h2 svg{
+    color: #fdd641;
+}
+.contact form input {
+    border-radius: 25px;
+    background-color: #b8c0ca;
+    color: #EEE;
+}
+.contact form input::placeholder {
+    color: #FFF;
+}
+.contact form input:focus {
+    background-color: #b8c0ca;
+    color: #EEE;
+    border-color: var(--main-color);
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
+.contact form .btn {
+    /*background-color: #0fa83b !important;*/
+    border-radius: 20px;
+}
+/* End Contact Us */
+/* Start Footer */
+footer {
+    padding-top: 30px;
+    background-color: #929aa4;
+}
+footer .widget-footer {
+    border-bottom: 1px solid #CCC;
+    padding-bottom: 15px;
+}
+footer .box .heading{
+    border-bottom: 1px solid var(--main-color);
+    color: var(--main-color);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+footer .box span.d-block {
+    text-transform: capitalize;
+    padding: 5px;
+    font-size: 1.1rem;
+}
+footer .copyright {
+    padding: 20px;
+    color: #000;
+    text-transform: capitalize;
+}
+/* End Footer */
+
+/* Start Custom Pages*/
+/* Start Airdrop*/
+.airdrop {
+    margin-bottom: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.airdrop .item p{
+    background-color: #38414a;
+    padding: 10px;
+    border-radius: 20px;
+}
+.airdrop .about-ace {
+    border-bottom: 1px solid #333;
+    padding-bottom: 15px;
+}
+.airdrop .desc p,
+.airdrop .desc span {
+    font-size: 1.3rem;
+}
+.airdrop .rule div {
+    padding-bottom: 10px;
+    margin-top: 10px;
+
+}
+.airdrop .rule div p {
+    font-size: 1.3rem;
+}
+.airdrop .mission  .group  {
+    margin-bottom: 15px;
+}
+.airdrop .mission  .group .heading-mis  {
+    margin-bottom: 10px;
+}
+
+.airdrop .mission  .group .heading-mis .icon svg {
+    width : 25px;
+    height: 25px;
+    padding: 10px;
+    background-color: #38414a;
+    border-radius: 50%;
+    margin-right : 10px
+
+}
+.airdrop .mission  .group .input input {
+    padding: 15px 20px;
+    border-radius: 30px;
+    background-color: #38414a;
+    color: #EEE;
+    font-size: 1.2rem;
+    border: 1px solid #CCC;
+}
+.airdrop .btn-success {
+    padding: 10px 50px;
+}
+/* End Airdrop*/
+/* Start Roadmap */
+.road .box {
+    background-color: var(--bg-color-dark);
+    padding: 15px;
+    margin-bottom: 20px;
+    height: 525px
+}
+@media(max-width: 576px) {
+    .road .box {
+        height: auto;
+    }
+}
+.road .box  img {
+    width:50%;
+    display: block;
+    margin: 15px auto;
+}
+.road .box h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.road .box p {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+/* End Roadmap */
+/* Start Why US*/
+.why-us .box {
+    padding: 30px;
+    background-color: var(--bg-color-dark);
+    border-radius: 10px;
+}
+.why-us .box p {
+    font-size: 1.7rem;
+}
+/* End Why US*/
+/* End Custom Pages*/

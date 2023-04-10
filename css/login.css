@@ -1,0 +1,62 @@
+/* Start Login Form */
+.login .form {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login form{
+    min-width : 500px;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: var(--bg-color-dark);
+}
+.divid {
+    margin: 20px auto;
+    border-top: 1px solid #FFF;
+    position: relative;
+}
+.divid::before {
+    color: #fff;
+    content: "Or";
+    position: absolute;
+    top: -25px;
+    height: 50px;
+    left: 50%;
+    line-height: 50px;
+    background: #404852;
+    font-size: 1.2rem;
+}
+.box {
+    background: rgba( 0, 255, 0, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    padding: 15px;
+    color: #FFF;
+    margin-bottom: 25px;
+}
+.box:hover {
+    background: rgba( 0, 255, 0, 0.45 ) !important;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+}
+.btn-success {
+    background: rgba( 0, 255, 0, 0.15 ) !important;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+}
+.btn-success:hover {
+    background: rgba( 0, 255, 0, 0.45 ) !important;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+}
+/* End Login Form */

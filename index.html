@@ -1,0 +1,451 @@
+<?php 
+    session_start();
+    session_regenerate_id();
+?>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sustaing</title>
+        <!-- Start Icon -->
+        <link rel="icon" type="image/png" href="images/nav-logo.png"/>
+        <!-- End Icon -->
+        <!-- Start Css Files -->
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/master.css">
+        <!-- End Css Files -->
+        <!-- Start Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <!-- End Fonts -->
+    </head>
+    <body>
+        <!-- Start Landing Section -->
+        <div class="landing">
+            <!-- Start Main Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-transparent">
+                <div class="container">
+                    <a class="navbar-brand" href="https://sustaing.com/">
+                        <img src="images/nav-logo.png" alt="sustaing" id = 'img-logo'>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navbar-all">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="https://sustaing.com/">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="airdrop.php">air drop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://drive.google.com/file/d/1Sx5-9ZFmSatg4crIfyiwTCWVWHdBw02p/view?usp=sharing">white paper</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="roadmap.php">Roadmap</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="why-us.php">why us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="swap.php">shop</a>
+                            </li>
+                            <?php
+                                if (!isset($_SESSION['Fullname']) ) {
+                                    ?>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="login.php">login</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="signup.php">
+                                                <button class = 'btn btn-success'>Sign Up</button>
+                                            </a>
+                                        </li>
+                                    <?php
+                                }else {
+                                    ?>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <?php echo $_SESSION['Fullname']?>
+                                        </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="logout.php">Logout</a></li>
+                                    </ul>
+                                    </li>
+                                    <?php
+                                }
+                            ?>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- End Main Navbar -->
+            <!-- Start Summary -->
+            <section class="summary">
+                <div class="container h-100">
+                    <div class="row h-100 ">
+                        <div class="col-md-6">
+                            <div class="sum">
+                                <h2 class = 'heading mb-5'>Smartest Way To Save <span>Energy</span></h2>
+                                <p class="lead">We already find the way to save the energy more,by fixing the battery with 100% recovery not only that you have warranty</p>
+                                <button class = 'btn btn-lg btn-success'>Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Summary -->
+        </div>
+        <!-- End Landing Section -->
+        <!-- Start Section Review -->
+        <section class="review">
+            <div class="container">
+                <div class="all">
+
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="item">
+                                <span class="number">
+                                    2600
+                                </span>
+                                <spna class="name">
+                                    Projects
+                                </spna>
+                                <span class="icon">
+                                    <img src="images/PROJECTS.png" alt="">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="item">
+
+                                <span class="number">
+                                    137
+                                </span>
+                                <spna class="name">
+                                    Staff
+                                </spna>
+                                <span class="icon">
+                                    <img src="images/STAFF.png" alt="">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="item">
+
+                                <span class="number">
+                                    9
+                                </span>
+                                <spna class="name">
+                                    Countries Coverd
+                                </spna>
+                                <span class="icon">
+                                    <img src="images/COUNTRIES COVERED.png" alt="">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="item">
+
+                                <span class="number">
+                                    845
+                                </span>
+                                <spna class="name">
+                                    SATISFIED PEOPLE
+                                </spna>
+                                <span class="icon">
+                                    <img src="images/SATISFIED PEOPLE.png" alt="">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Section Review -->
+        <!-- Start About US -->
+        <section class = 'about'>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h2> <span class = 'heading'>About Us</span></h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-9">
+                        <div class="box">
+                            <h3>SMARTEST WAY TO SAVE ENERGY</h3>
+                            <p>
+                                We already find the way to save the energy more,by fixing
+                                the battery with 100% recovery not only that you have 
+                                warranty
+                            </p>
+                            <div>
+                                <h4>01. OUR CULTURE</h4>
+                                <p>
+                                    Indignation and dislikes men who are so beguiled all
+                                    charms pleasure of the moment...
+                                </p>
+                            </div>
+                            <div>
+                                <h4>02. OUR PRODUCTIVITY</h4>
+                                <p>
+                                    Beguiled and demoralized by the charms of pleasure 
+                                    of the moment so blinded desire foresee...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End About US -->
+        <!-- Start Working Proccess -->
+        <section class="work">
+            <div class="container">
+                <div class="header">
+
+                    <div>
+    
+                        <h1> <span class = 'heading'>WORKING PROCESS</span></h1>
+                    </div>
+                    <div class="row align-items-center text-white">
+                        <div class="col-md-4">
+                            <h2 class = 'unstyled'>4 WAYS TO JOIN</h2>
+                        </div>
+                        <div class="col-md-8">
+                            <div>
+    
+                                <p class = 'lead ms-auto'>Power of join in the begging such a great project,No smart people will leave it</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="lg d-lg-block d-none text-white">
+                        <div class="img">
+                            <img src="images/5204054.png" alt="">
+                        </div>
+                        <div class="row text-center">
+                            <div class="col-lg-3">
+                                <div class="item top">
+                                    <h3><span class = 'heading one'>Airdrop</span></h3>
+                                    <p class="lead">we are going to spend coin as airdrop for who support us. </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="item">
+                                    <h3><span class = 'heading two '>ICO</span></h3>
+                                    <p class="lead">
+                                        you can buy packages with cheaper price
+                                        before ico start with 25 USD to 19.99 K USD
+                                    </p>                                
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="item top">
+                                    <h3><span class = 'heading three'>INVESTORE</span></h3>
+                                    <p class="lead">
+                                        this for who believes and just testing and
+                                        decide to start with more than 20K USD
+                                    </p>                                
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="item">
+                                    <h3><span class = 'heading four'>USE IT FLEXIBLY</span></h3>
+                                    <p class="lead">
+                                        Ever undertakes laborious except to obtain
+                                        some advantage from it right to ﬁnd fault
+                                    </p>                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-lg-none">
+                        <div class="col-md-6 col-sm-12">
+                            <div class="box text-white">
+                                <span class = 'icon'><i class="fa-solid fa-1 fa-2x"></i></span>
+                                <h3 class = 'mb-3'> <span class = 'heading main-color mb-3'>Airdrop</span></h3>
+                                <p class="lead">we are going to spend coin as airdrop for who support us. </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="box text-white">
+                                <span class = 'icon'><i class="fa-solid fa-2 fa-2x"></i></span>
+                                <h3 class = 'mb-3'> <span class = 'heading main-color mb-3'>ICO</span></h3>
+                                <p class="lead">
+                                    you can buy packages with cheaper price
+                                    before ico start with 25 USD to 19.99 K USD
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="box text-white">
+                                <span class = 'icon'><i class="fa-solid fa-3 fa-2x"></i></span>
+                                <h3 class = 'mb-3'> <span class = 'heading main-color mb-3'>INVESTORE</span></h3>
+                                <p class="lead">
+                                    this for who believes and just testing and
+                                    decide to start with more than 20K USD
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="box text-white">
+                                <span class = 'icon'><i class="fa-solid fa-4 fa-2x"></i></span>
+                                <h3 class = 'mb-3'> <span class = 'heading main-color mb-3'>USE IT FLEXIBLY</span></h3>
+                                <p class="lead">
+                                    Ever undertakes laborious except to obtain
+                                    some advantage from it right to ﬁnd fault
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Working Proccess -->
+        <!-- Start Company Statics -->
+        <section class="company">
+            <div class="container">
+                <h1> <span class = 'heading'>COMPANY STATISTICS </span></h1>
+                <div class="row mt-5">
+                    <div class="col-md-6 d-none d-lg-block ">
+                        <div class="cont-img h-100">
+                            <div class = ' h-100 d-flex imgs w-100 align-items-end justify-content-center'>
+
+                                <img src="images/wind-1.png" >
+                                <img src="images/men-1.png" data-wow-duration="1s" class = 'wow animate__backInUp'>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="box text-white mb-5">
+                            <h3>FOR OVER YEARS IN THE BUSINESS</h3>
+                            <p class="lead">
+                                Our power of choice is untrammelled and when nothing 
+                                prevents our being able to do what we like best, every 
+                                pleasure is to be welcomed and every pain avoided certain 
+                                circumstances. That's what we thought until we came to 
+                                battery now it's the time to go forward in it too
+                            </p>
+                            <div class="prog-group">
+                                <div class="d-flex justify-content-between">
+                                    <span class = 'name'>SOLAR ENERGY</span>
+                                    <span class = 'prog'>62%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar " role="progressbar" aria-valuenow="62" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="prog-group">
+                                <div class="d-flex justify-content-between">
+                                    <span class = 'name'>WIND ENERGY</span>
+                                    <span class = 'prog'>89%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar " role="progressbar" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>                            
+                            </div>
+                            <div class="prog-group">
+                                <div class="d-flex justify-content-between">
+                                    <span class = 'name'>HYDROELECTRIC ENERGY</span>
+                                    <span class = 'prog'>75%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>                            
+                            </div>
+                            <div class="user">
+                                <span class = 'name'>ANWAR</span>
+                                <span class = 'works'>FOUNDER</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- End Company Statics -->
+        <!-- Start Contact -->
+        <section class="contact">
+            <div class="container">
+                <h1 class = 'mb-5'> <span class = 'heading mb-3'>Contact Us</span></h1>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="img d-flex align-items-center justify-content-center h-100">
+                            <img src="images/log-con.png" alt="contact" class="w-100">
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="box text-white mt-5">
+                            <h2>Oh hi there <i class="fa-solid fa-hand"></i></h2>
+                            <h2>It's nice to meet you.</h2>
+                            <p class="lead">Sign up to our newsletter to know more about the offer and package</p>
+                            <form>
+                                <input type="email" name="email" id="email" placeholder="Email Address" class = 'form-control'>
+                                <button class = 'mt-3 btn btn-success btn-lg d-block btn-block m-auto'>subscribe now</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Contact -->
+        <!-- Start Footer -->
+        <footer>
+            <div class="widget-footer">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="box">
+                                <h3 class = 'mb-3'> <span class = 'heading mb-3'>Archives</span></h3>
+                                <span class = 'd-block text-white'><a href="#" class="text-white text-decoration-none">March 2022</a></span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="box">
+                                <h3 class = 'mb-3'> <span class = 'heading mb-3'>Categories</span></h3>
+                                <span class = 'd-block text-white'><a href="#" class="text-white text-decoration-none">Blog Classic</a></span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="box">
+                                <h3 class = 'mb-3'> <span class = 'heading mb-3'>Meta</span></h3>
+                                <span class = 'd-block text-white'><a href = '#' class="text-white text-decoration-none">Register</a></span>
+                                <span class = 'd-block text-white'><a href = '#' class="text-white text-decoration-none">Login</a></span>
+                                <span class = 'd-block text-white'><a href="#" class="text-white text-decoration-none">Entries Feed</a></span>
+                                <span class = 'd-block text-white'><a href="#" class="text-white text-decoration-none">Comments Feed</a></span>
+                                <span class = 'd-block text-white'><a href="#" class="text-white text-decoration-none">Wordpress.org</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    copyright &copy; 2021 Energo. All Rights Reserved.
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+        <!-- Start JS Files -->
+        <script src="js/all.min.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>        
+        <script src="js/main.js"></script>
+        <!-- End JS Files -->
+    </body>
+</html>
